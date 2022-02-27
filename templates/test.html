@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>查看用户列表</title>
+</head>
+<body>
+ <table border="1">
+        <tr>
+            <th>x</th>
+            <th>y</th>
+            <th>z</th>
+        </tr>
+        {% for user in datas %}
+            <tr>
+            <td>{{ user["x"] }}</td>
+            <td>{{ user["y"] }}</td>
+            <td>{{ user["z"] }}</td>
+            </tr>
+        {% endfor %}
+    </table>
+</body>
+</html>
